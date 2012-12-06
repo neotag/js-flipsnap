@@ -119,7 +119,8 @@ Flipsnap.prototype.init = function(element, opts) {
 
 	self.element.addEventListener(touchStartEvent, self, false);
 	self.element.addEventListener(touchMoveEvent, self, false);
-	self.element.addEventListener(touchEndEvent, self, false);
+//	self.element.addEventListener(touchEndEvent, self, false);
+	document.addEventListener(touchEndEvent, self, false);
 
 	return self;
 };
